@@ -1,0 +1,285 @@
+@charset "utf-8";
+/*-------------------------------------------reset------------------------------------------------*/
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+input,
+textarea,
+p,
+blockquote,
+th,
+td {
+	margin:0;
+	padding:0; font-size:12px; color:#666;
+}
+table {
+	border-collapse:collapse;
+	border-spacing:0;
+}
+fieldset,
+img {
+	border:0;
+}
+/*
+	TODO think about hanlding inheritence differently, maybe letting IE6 fail a bit...
+*/
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+th,
+var {
+	font-style:normal;
+	font-weight:normal;
+}
+/*
+	TODO Figure out where this list-style rule is best set. Hedger has a request to investigate.
+*/
+li {
+	list-style:none;
+}
+
+caption,
+th {
+	text-align:left;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-size:100%;
+	font-weight:normal;
+}
+q:before,
+q:after {
+	content:'';
+}
+abbr,
+acronym {
+	border:0;
+	font-variant:normal;
+}
+input,
+textarea,
+select {
+	font-family:inherit;
+	font-size:inherit;
+	font-weight:inherit;
+}
+/*to enable resizing for IE*/
+input,
+textarea,
+select {
+	*font-size:100%;
+}
+/*because legend doesn't inherit in IE */
+legend {
+	color:#000;
+}
+/*-------------------------------------base.css-------------------------------------------*/
+/*文字排版*/
+.f12{font-size:12px;}
+.f14{font-size:14px;}
+.f18{font-size:18px}
+.f20{font-size:20px}
+.fb{font-weight:bold;}
+.fn{font-weight:normal;}
+.t2{text-indent:2em;}
+.unl,a.unl,body a.unl,body *.unl,body a.unl:link,body a.unl:visited{text-decoration:underline;}
+.no_unl{text-decoration:none;}
+.yahei{font-family:Microsoft YaHei;}
+/*定位*/
+.tl{text-align:left;}
+.tc{text-align:center;}
+.tr{text-align:right;}
+.bc{margin-left:auto;margin-right:auto;}
+/*
+	fl包含display inline  是为了解决ie6双边距  
+	如果.fl用在ul(可能还有别的标签)标签上会出现类似text-indent的bug  
+	可以通过给li标签浮动修正 或者覆盖掉此处的display属性
+*/
+.fl{float:left;display:inline;}
+.fr{float:right;display:inline;}
+.cb{clear:both;}
+.cl{clear:left;}
+.cr{clear:right;}
+.ma{ margin:0 auto;}
+/*
+	不加block在标准浏览器中无法清除ie6、7可以但下面多一像素
+	height:0px;时ie6中无法清除(给浮动块margin可以看出)
+*/
+.clear{clear:both;overflow:hidden;display:block;height:0px;_height:1px; font:300 1px/1px arial;}
+/*
+	clearfix清除浮动后在ie6、7中会忽略浮动框的margin-bottom
+	并且偶尔会由于layout被激活而出现一些bug  如多出间隙等
+	此时可以使用.clear来避免这种bug 或者两者结合使用
+*/
+.clearfix:after{content:'.';display:block;height:0;clear:both;visibility:hidden;}
+.clearfix{*zoom:1;}
+.clearfix .clear{_height:0px;}
+/*
+	一般情况下使用clearfix即可
+	出现忽略margin等情况是clearfix与clear一起使用
+	单独使用clear一般可以清除浮动，但ie6会多一个像素
+*/
+.vm{vertical-align:middle;}
+.pr{position:relative;}
+.pa{position:absolute;}
+.abs-right{position:absolute;right:0;}
+.zoom{zoom:1;}
+.hidden{visibility:hidden;}
+/*
+	block 如img标签有时需要此class来消除空行
+*/
+.block{display:block;}
+.none{display:none;}
+/*
+	常用的变量css可以在项目css中写出
+	如：.w10{width:10px;}
+		.m10{margin:10px;}
+		.p10{padding:10px;}
+	可在项目中给出语义化class名
+	如：.wNormal{width:100px;}
+		.wPage{width:950px;}
+	等..
+*/
+/*
+	其它需要的在项目css中写出
+	height等使用较少，这里不给出
+	边距提供0 5 10 15 20
+	宽度提供 10 20 30 40 50 100 150 200 250 300 350 400 450 500 600 700 800 900 1000
+	p放在前面 pl,pr,pt,pb等放在后面 便于覆盖
+*/
+/*width*/
+.w10{width:10px;}
+.w20{width:20px;}
+.w30{width:30px;}
+.w40{width:40px;}
+.w50{width:50px;}
+.w70{ width:70px;}
+.w100{width:100px;}
+.w150{width:150px;}
+.w200{width:200px;}
+.w250{width:250px;}
+.w300{width:300px;}
+.w350{width:350px;}
+.w400{width:400px;}
+.w450{width:450px;}
+.w500{width:500px;}
+.w600{width:600px;}
+.w700{width:700px;}
+.w800{width:800px;}
+.w900{width:900px;}
+.w1000{width:1000px;}
+
+.w120{width:120px;}
+.w140{width:140px;}
+.w180{width:180px;}
+.w270{width:270px;}
+.w630{width:630px;}
+.w650{width:650px;}
+.w760{width:760px;}
+.w780{width:780px;}
+
+/*padding*/
+.p5{padding:5px;}
+.p7{padding:7px;}
+.p10{padding:10px;}
+.p15{padding:15px;}
+.p20{padding:20px;}
+.pl0{padding-left:0;}
+.pl5{padding-left:5px;}
+.pl7{padding-left:7px;}
+.pl8{padding-left:8px;}
+.pl10{padding-left:10px;}
+.pl15{padding-left:15px;}
+.pl20{padding-left:20px;}
+.pl30{padding-left:30px;}
+.pl40{padding-left:40px;}
+.pl50{padding-left:50px;}
+.pl150{padding-left:150px;}
+.pr0{padding-right:0;}
+.pr5{padding-right:5px;}
+.pr7{padding-right:7px;}
+.pr9{padding-right:9px;}
+.pr10{padding-right:10px;}
+.pr15{padding-right:15px;}
+.pr20{padding-right:20px;}
+.pr50{padding-right:50px;}
+.pt0{padding-top:0;}
+.pt5{padding-top:5px;}
+.pt7{padding-top:7px;}
+.pt8{padding-top:8px;}
+.pt10{padding-top:10px;}
+.pt15{padding-top:15px;}
+.pt20{padding-top:20px;}
+.pb0{padding-bottom:0;}
+.pb5{padding-bottom:5px;}
+.pb7{padding-bottom:7px;}
+.pb10{padding-bottom:10px;}
+.pb15{padding-bottom:15px;}
+.pb20{padding-bottom:20px;}
+.pb30{padding-bottom:30px;}
+/*margin*/
+.m5{margin:5px;}
+.m10{margin:10px;}
+.m15{margin:15px;}
+.m20{margin:20px;}
+.ml0{margin-left:0;}
+.ml5{margin-left:5px;}
+.ml10{margin-left:10px;}
+.ml15{margin-left:15px;}
+.ml20{margin-left:20px;}
+.ml40{margin-left:40px;}
+.mr0{margin-right:0;}
+.mr5{margin-right:5px;}
+.mr10{margin-right:10px;}
+.mr15{margin-right:15px;}
+.mr20{margin-right:20px;}
+.mt0{margin-top:0;}
+.mt5{margin-top:5px;}
+.mt10{margin-top:10px;}
+.mt12{margin-top:12px;}
+.mt15{margin-top:15px;}
+.mt20{margin-top:20px;}
+.mt30{margin-top:30px;}
+.mb0{margin-bottom:0;}
+.mb5{margin-bottom:5px;}
+.mb10{margin-bottom:10px;}
+.mb15{margin-bottom:15px;}
+.mb20{margin-bottom:20px;}
+.mb30{margin-bottom:30px;}
+.mb40{margin-bottom:40px;}
+.mb50{margin-bottom:50px;}
+
+/* 隐藏超出部分 */
+.ofh{ overflow:hidden;}
+
+/* 行高 */
+.lh_16 {line-height:1.6;}
+.lh_18{ line-height:1.8;}
+.lh_20{ line-height:2.0;}
+.lh_24{ line-height:2.4;}
+
+/* 行里块级 */
+.dib{ display:inline-block;}

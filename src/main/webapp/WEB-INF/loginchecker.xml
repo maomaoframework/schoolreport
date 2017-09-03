@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<checker>
+	<include>
+		<item path="/admin"></item>
+	</include>
+	<exclude>
+		<item path="/themes"></item>
+		<item path="/payment"></item>
+		<item path="/script"></item>
+		<item path="/download"></item>
+		<item path="/public"></item>
+	</exclude>
+</checker>

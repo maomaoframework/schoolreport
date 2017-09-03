@@ -1,0 +1,5 @@
+
+/* Z-INDEX */
+ .formError { z-index: 999500; }
+.formError .formErrorContent { z-index: 999501; }
+.formError .formErrorArrow { z-index: 999502; }

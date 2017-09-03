@@ -1,0 +1,151 @@
+/*公共样式*/
+.clearfix:after {clear: both;}
+.clearfix {zoom: 1;}
+/* 移动前端的一些坑和解决方法（外观表现） */
+.border-radius-9999{border-radius:9999px;/*Android2.3.x百分比失效,解决办法：设置一个较大值*/}
+.placeholder-android{line-height:normal;/*解决Android4.x部分机型placeholder属性设置的文字向上偏移的厉害*/}
+input,button,select{-webkit-appearance:none;/*webkit上的input,button,及select的默认样式可以通过以下代码禁用，然后自定义。*/}
+
+
+.content-block{
+    margin:0 auto;
+    padding: 0;
+    width: 50%;
+}
+.icon-left{color:#333;}
+.clored{color:#d82121;}
+/*
+* @Author: anchen
+* @Date:   2016-02-27 16:34:00
+* @Last Modified by:   anchen
+* @Last Modified time: 2016-03-21 14:33:02
+*/
+
+.collection-page img{
+  min-width: 0;
+}
+
+.redcolor{
+  color:#EC3134;
+}
+
+/* 首部 */
+.collection-page .bar{
+  background:#fff;
+  border-bottom:#ddd 1px solid;
+  z-index: 9999;
+}
+
+.collection-page .buttons-row{
+  width:50%;
+  margin: 0 auto;
+  border-radius: 50px;
+}
+
+.collection-page .buttons-row .button:first-child{
+  border-radius: 0.3rem 0 0 .3rem;
+}
+
+.collection-page .buttons-row .button:last-child{
+  border-radius: 0 .3rem .3rem 0;
+}
+
+.collection-page .buttons-row .button.active{
+  background-color: #27ae5f;
+}
+
+.collection-page .buttons-row .button{
+  border-color: #27ae5f;
+  color:#27ae5f;
+}
+
+.collection-page .buttons-row .button.active{
+  color:#fff;
+}
+
+/* 内容 */
+.collection-page .content .tabs{
+  margin-top: 0.5rem;
+}
+.collection-page .content .goods-list{
+    background:white;
+    position:relative;
+    margin-bottom: .5rem;
+}
+.slide-edit{position:absolute;top:2rem;right:.5rem;width:30%;color:white;text-align: center;z-index:1;display:none;}
+.slide-edit ul{width:100%;background:#333;border-radius:.5rem;position:relative;}
+.slide-edit ul li{height:2rem;line-height:2rem;}
+.slide-edit ul li:nth-child(3){border:1px solid #444;border-left: none;border-right: none;}
+.slide-edit .triangle-up {
+width:0;
+height:0;
+border-left:10px solid transparent;
+border-right:10px solid transparent;
+border-bottom:10px solid #333;
+position:absolute;
+top:-.4rem;
+right:.5rem;
+}
+.add-rad{
+    background:#333;
+    width:3rem;
+    height:3rem;
+    border-radius:100%;
+    color:white;
+    text-align:center;
+    line-height:3rem;
+    position:fixed;
+    right:5%;
+    bottom: 5%;
+}
+.add-rad a{display:block;width:100%;height:100%;color:white;}
+.collection-page .content .goods-list-block{
+    border-bottom:1px solid #e1e1e1;
+}
+.collection-page .content .goods-list-block .triangle-down .arrow{
+    width: 11px;
+    height: 6px;
+    vertical-align: middle;
+}
+.state{
+    position:absolute;right:.5rem;color:#27ae5f;
+}
+/* 收藏店铺列表 */
+.collection-page .store-list .store-list-item{
+  background:#fff;
+  height:4.35rem;
+  padding:0.85rem 0 0.85rem 0.8rem;
+  border-bottom: solid 1px #DEDEDE;
+}
+
+.collection-page .store-list-item img{
+  width: 6.25rem;
+  height:2.65rem;
+}
+
+.collection-page .store-list-item .store-info{
+  width:55%;
+  margin-left: 3%;
+
+}
+
+.collection-page  .store-info .store-name{
+  font-size: 0.65rem;
+  color:#333;
+  display:block;
+  height: 0.9rem;
+  overflow: hidden;
+}
+
+.collection-page  .store-info .store-intro{
+  display:block;
+  font-size:0.6rem;
+  color:#999;
+  margin-top:0.1rem;
+  width:5.8rem;
+  overflow:hidden;
+}
+
+.collection-page .store-intro .collector{
+  margin-left: 7%;
+

@@ -1,0 +1,34 @@
+fieldset {
+	margin: 0 0 20px 0;
+	padding: 0;
+	border: 0;
+}
+
+fieldset legend {
+	display: block;
+	width: 100%;
+	margin-bottom: 10px;
+	padding-bottom: 5px;
+	border: 0;
+	border-bottom: 1px solid #e5e5e5;
+	font: bold 14px/20px '\5fae\8f6f\96c5\9ed1';
+}
+
+.inleft {
+	float: left;
+}
+
+.inright {
+	float: left;
+	margin-left: 20px;
+}
+
+.inright .cxbtn_group {
+	display: block;
+}
+
+.inright .cxbtn_group+.cxbtn_group {
+	margin-top: 10px;
+	margin-left: 0;
+}
+

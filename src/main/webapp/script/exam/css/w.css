@@ -1,0 +1,39 @@
+/* 倒计时 */
+.CountDown{height:154px;}
+.CountDown_date{width:115px; height:26px; line-height:26px; padding:48px 7px 17px 93px; float:left; background:url(../../images/test/bg_date_t.gif) no-repeat;}
+.CountDown_day{width:215px; height:43px; line-height:26px; padding:10px 0px; float:left; background:url(../../images/test/bg_date_bH.gif) no-repeat; font-family:Arial;}
+.CountDown_day em{ display:block; font:600 12px/17px arial; color:#D2FF00; text-align:center;}
+.H142{height:142px;}
+.H125{height:125px;}
+
+.frtest{ float:right;}
+.frtest span{ float:left; font-size:14px; padding-left:10px;}
+.frtest span select{ position:relative; top:4px; top:-1px\9;top:4px\0;_top:2px;}
+:root .frtest span select {top:3px\9; }/*ie9*/
+
+.tabClass li{text-align:center; height:26px;line-height:26px; border:1px solid #cbcbcb; float:left; background:url(../../images/test/btn_bg_day.jpg) repeat-x bottom;font-size:14px; color:#04448c;}
+.tabClass li.current{ background:#e3f3ff; background-image:none; font-weight:bold;}
+.tabClass li{width:220px;}
+.tabClass li.middle{margin:0px 23px;}
+.tabClass li a:hover{ text-decoration:none;}
+
+
+/* 日历 */
+.calendar{width:135px; height:55px; padding:20px 0px 12px 80px; line-height:22px; background:url(../../images/test/bg_calendar.gif) no-repeat 0px;}
+
+.planBlock{width:215px; height:auto; background:#0099f3 url(../../images/test/bg_title_215B.gif) no-repeat bottom;}
+.planBlock h1{width:215px; height:34px; background:url(../../images/test/bg_title_215.gif) no-repeat top; font-size:14px; color:#FFFFFF; line-height:34px; font-weight:bold;}
+.planDiv{padding:0px 5px 0px 5px; overflow:hidden;}
+.planDiv div{ background:#0053a4; margin-bottom:5px; overflow:hidden;}
+.planDiv div ul{ padding:10px;}
+.planDiv div ul li{ background:url(../../images/test/icon_T02.gif) no-repeat 0px 8px; padding-left:8px;color:#FFFFFF;}
+
+
+
+
+.sale{width:500px; height:48px; margin:10px 0px 0px 285px; padding:10px 15px 10px 85px; line-height:24px; border:1px solid #d0d87e; background:#fcffea url(../../images/test/sale.gif) no-repeat 10px 0px;}
+.saleSave{ position:relative; top:-1px;}
+
+.know_Con{ border-top:1px dashed #9bb0c2; border-bottom:1px dashed #9bb0c2; position:relative;}
+.do_big{ background:url(../../images/test/do_big.gif) no-repeat 0 0; width:30px; height:30px; position:absolute; bottom:12px; right:20px;}
+.blowUp{ position:absolute; right:50px; bottom:20px;}

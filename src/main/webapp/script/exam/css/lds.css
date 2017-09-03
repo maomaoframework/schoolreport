@@ -1,0 +1,57 @@
+@charset "utf-8";
+/* CSS Document */
+.slogan img{ display:block;}
+.input_search{ height:24px; text-align:right; margin:17px 0 0; overflow:hidden;}
+.input_search input{ width:230px; padding:0 3px; height:22px; line-height:22px; border:1px solid #a4a29d; float:left;}
+.input_search input.sub{ width:26px; height:24px; background:url(../../images/test/input_search.gif) no-repeat; border:none; cursor:pointer;}
+
+/* 个人中心 用户资料 */
+form.userData,form.userHead,form.register{ font-size:14px;}
+.userData div,.userHead div,.register div{ width:650px; clear:both; margin:12px auto; font-size:14px; overflow:hidden;}
+.userData label,.userData input,.userData span,.userData img,.userData em,.userData select,.userData textarea{ float:left; margin:0 0 0 10px;}
+.userData img{ margin:3px 0 0 10px;}
+.userData em,.userData select{ font-size:12px;}
+.userData span{ margin:0 0 0 3px;}
+.userData select{ font-size:12px; height:22px; line-height:22px;}
+.userData label,.register label{ width:90px; text-align:right;}
+.userData input,.userData textarea,.register input{ width:296px; height:22px; line-height:22px; padding:0 2px; border:1px solid #CCC;}
+
+.userData label{ margin:0;}
+.userData label strong{ font:600 14px/24px arial; color:#F00; margin:0 2px 0 0;}
+.userData input.inputAuto{ height:auto; width:auto; border:none; padding:0;}
+.userData input.inputRadio{ margin:5px 0 0 10px; *margin:0px 0 0 10px;}
+.userData textarea{ height:46px;}
+.userData input.btnBlue,input.btnBlue{ width:115px; height:28px; background:url(../../images/test/bg_btn_blue.gif) no-repeat; padding:0; border:none; text-align:center; font:600 14px/28px '\5b8b\4f53'; color:#FFF; cursor:pointer;}
+.userData em{ width:180px; overflow:hidden;}
+.userData em.row2,.signUpForm em.row2{ line-height:14px;}
+.userData fieldset{ width:480px; margin:30px 0 40px 30px; border:1px solid #CCC; padding:15px; display:block;}
+.userData pre.tc input{ float:none;}
+
+.userHead input{ width:200px;}
+.input_khaki{ height:25px; line-height:25px; padding:0 2px; background:#fff6e1; color:#9f9f9f; border:1px solid #9f9f9f;}
+.userHead img { padding:1px; border:1px solid #9f9f9f;}
+
+
+/* 基本信息-弹出层 */
+.pop h1{ width:160px; height:30px; padding:0 12px; font:600 14px/30px '\5b8b\4f53'; background:url(../../images/test/pop_tit.gif); position:relative;}
+.pop h1 span{ position:absolute; right:10px; top:8px; cursor:pointer;}
+.pop div{ width:160px; padding:15px 12px 10px; background:url(../../images/test/pop_con.gif) repeat-y;}
+.pop p{ width:184px; height:5px; background:url(../../images/test/pop_bottom.gif) no-repeat;}
+
+
+/* 弹出框表单 popForm */
+.popForm div{ margin:12px 0; overflow:hidden;}
+.popForm input.inputTime{ width:162px; height:22px; line-height:22px; padding:0 2px; border:1px solid #CCC;}
+.popForm ul.subjectOrder{ margin:0 auto;}
+
+.apply_submit{ border:1px solid #e0e0e0; padding:100px 0; background:#fefff3; text-align:center;}
+.apply_submit p,.register_succeed p{ margin:20px 0;}
+.register_succeed{ width:490px; margin:50px auto 200px; padding:30px 0 20px; border:1px solid #dedede; background:#f9f9f9; text-align:center;}
+
+
+
+
+
+
+
+

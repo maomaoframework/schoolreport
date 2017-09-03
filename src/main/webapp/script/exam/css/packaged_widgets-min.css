@@ -1,0 +1,196 @@
+.practice_game .avatar .name {
+	display:none;
+}
+.practice_game .avatar {
+	display:block;
+	float:left;
+	padding:2px;
+}
+.practice_game .spinner {
+	position:absolute;
+	left:0;
+	top:0;
+}
+.game_actions {
+	width:140px;
+	float:right;
+	margin-right:10px;
+	position:relative;
+	padding-top:20px;
+	text-align:right;
+}
+.game_action {
+	display:none;
+	position:absolute;
+	top:0;
+	right:0;
+}
+.game .active {
+	display:inline;
+}
+.game {
+	margin:8px 0;
+	padding-bottom:6px;
+	border-bottom:1px dotted #ccc;
+}
+.game_time {
+	text-align:right;
+}
+.expand {
+	margin-right:140px;
+}
+.fixed {
+	float:left;
+	max-width:210px;
+	min-width:150px;
+	margin-left:10px;
+}
+.avatar_list {
+	overflow:hidden;
+	padding:3px 0 0 3px;
+}
+.track_game {
+	min-height:50px;
+	border-bottom:1px dotted #ccc;
+	margin:10px 0;
+	overflow:hidden;
+}
+.track_game .avatar {
+	margin:2px;
+}
+.track_game .button {
+	display:inline-block;
+	padding-left:10px;
+	padding-right:10px;
+}
+.track_game .button span {
+	background:url(../../images/icons/little_people.png) no-repeat 0 0;
+}
+.track_game .multi {
+	margin-right:12px;
+}
+.track_game .multi span {
+	padding-left:28px;
+}
+.track_game .solo span {
+	padding-left:13px;
+	background-position:-15px 0;
+}
+.track_game .experimental {
+	float:right;
+	padding-left:30px;
+	padding-right:30px;
+}
+.track_game .experimental span {
+	background-image:none;
+}
+.game.mini {
+	overflow:visible;
+}
+.carousel {
+	position:relative;
+	width:175px;
+}
+.carousel .avatar_list {
+	overflow:hidden;
+	height:25px;
+}
+.gradient_overlay {
+	background:url(../images/gradients/left_alpha_gradient.png) right 0 repeat-y;
+	bottom:0;
+	left:0;
+	position:absolute;
+	right:0;
+	top:0;
+}
+.mini_join_game {
+	display:block;
+	float:left;
+	margin:3px 5px 3px -45px;
+	height:25px;
+	line-height:25px;
+	width:40px;
+	background-color:#eaf8ff;
+	text-align:center;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+}
+.mini_join_game.full {
+	background-color:#e5e5e5;
+	color:#999;
+}
+a.mini_join_game:hover {
+	background-color:#09c;
+	color:#eaf8ff;
+}
+#test_date_input {
+	display:inline;
+	width:80px;
+	color:gray;
+}
+#test_date_text {
+	font-weight:bold;
+}
+.scheduled_study_group .button {
+	display:inline-block;
+	margin-top:10px;
+}
+.scheduled_study_group .button a {
+	color:white;
+}
+.scheduled_study_group .avatar_list .avatar {
+	margin:5px 4px 0 0;
+}
+#game_edit_form {
+	display:none;
+	position:fixed;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+	background-color:#333;
+	background-color:rgba(0, 0, 0, 0.8);
+}
+#game_edit_form form {
+	position:absolute;
+	background-color:#fff;
+	border:1px solid #ccc;
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px;
+	border-radius:5px;
+	padding:20px;
+	width:460px;
+}
+#game_edit_form h3 {
+	background:#f3f3f3;
+	border-bottom:solid 1px #ccc;
+	padding:10px 15px;
+}
+#game_edit_form label {
+	display:inline-block;
+	width:60px;
+}
+#game_edit_form select {
+	width:60px;
+}
+#game_edit_form .field {
+	margin:10px 0;
+}
+#game_edit_form .name input {
+	width:280px;
+}
+#game_edit_form .date input {
+	width:150px;
+}
+#game_edit_form .time {
+	margin-left:60px;
+}
+#game_edit_form .close {
+	margin-left:10px;
+}
+#game_edit_form .submit {
+	line-height:14px;
+}
+#game_edit_form .delete {
+	float:right;
+}

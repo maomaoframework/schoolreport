@@ -1,0 +1,3 @@
+TopBar.init();
+IndexTop.init();
+

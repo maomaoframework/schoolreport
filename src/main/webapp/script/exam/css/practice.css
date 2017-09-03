@@ -1,0 +1,65 @@
+/* Mixins */
+/* not possible to do more than 2 values with MS Xo(... */
+/* Palette */
+.top_players .info {
+  color: #666;
+  font-size: 11px; }
+
+.featured_instructors .avatar {
+  display: block;
+  margin-bottom: 6px; }
+
+.featured_instructors .avatar .name {
+  display: inline;
+  margin-left: 6px; }
+
+#inprogress_games *[ap=timeNode] {
+  display: none; }
+
+.mini {
+  float: left; }
+
+.locked h4 {
+  color: #666; }
+
+.locked p {
+  color: #999;
+  line-height: 1.6em; }
+
+.locked a, span.locked {
+  color: #999;
+  cursor: auto; }
+
+.locked .assessment_icon {
+  opacity: 0.35;
+  filter: alpha(opacity=35); }
+
+.top_player .avatar {
+  float: left; }
+.top_player .player_info {
+  margin-left: 6px;
+  float: left; }
+
+.subtrack {
+  display: none; }
+
+.subtrack.active {
+  display: block; }
+
+#track_games .expand {
+  margin-right: 220px; }
+
+#track_games .actions {
+  width: 220px;
+  float: right;
+  margin-right: 1px; }
+
+#track_games .track_list {
+  overflow: hidden;
+  padding: 3px 0 0 3px; }
+
+#track_games .avatar_list {
+  padding: 0;
+  overflow: visible; }
+.test_topic>div{padding-left: 21px;text-indent: -21px;line-height: 30px;color: #000;font-size: 14px;display: block;margin-left: 52px;}
+.test_topic div{padding-left: 21px;text-indent: -21px;line-height: 30px;color: #000;font-size: 14px;display: block;}
