@@ -22,7 +22,7 @@
 		<property name="fileEncoding" value="UTF-8" />
 	</bean>
 
-	<context:component-scan base-package="huxg.framework">
+	<context:component-scan base-package="huxg">
 		<context:exclude-filter type="annotation"
 			expression="org.springframework.stereotype.Controller" />
 	</context:component-scan>
@@ -354,26 +354,6 @@
 		<property name="exposeSessionAttributes" value="true" />
 		<property name="viewClass"
 			value="huxg.framework.web.view.MyFreemarkerView" />
-	</bean>
-
-	<bean id="connectionProvider"
-		class="huxg.framework.thrift.ConnectionProviderImpl">
-		<property name="serviceIP" value="${thrift.pool.ip}" />
-		<property name="servicePort" value="${thrift.pool.port}" />
-		<property name="maxActive" value="${thrift.pool.maxActive}" />
-		<property name="maxIdle" value="${thrift.pool.maxIdle}" />
-		<property name="testOnBorrow" value="${thrift.pool.testOnBorrow}" />
-		<property name="testOnReturn" value="${thrift.pool.testOnReturn}" />
-		<property name="testWhileIdle" value="${thrift.pool.testWhileIdle}" />
-		<property name="conTimeOut" value="${thrift.pool.conTimeOut}" />
-	</bean>
-
-	<bean id="connectionManager" class="huxg.framework.thrift.ConnectionManager">
-		<property name="connectionProvider" ref="connectionProvider" />
-	</bean>
-
-	<!-- 配置短信发送插件 -->
-	<bean id="SMSProvider" class="huxg.framework.plugin.sms.zz.ZZSMSProvider">
 	</bean>
 	
 </beans>

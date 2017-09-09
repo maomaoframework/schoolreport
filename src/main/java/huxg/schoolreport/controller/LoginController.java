@@ -28,9 +28,6 @@ import huxg.framework.web.controller.BaseController;
 @Controller("loginController")
 @RequestMapping("/login")
 public class LoginController extends BaseController {
-	@Resource(name = "ThriftClientTemplate")
-	protected ThriftClientTemplate thriftTemplate;
-
 	private static final String SESSION_KEY = "TXv8CYuoO0OCREMxPZ";
 
 	@RequestMapping(value = "")

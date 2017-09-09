@@ -9,6 +9,8 @@
 	<description>Schoolreport 1.0</description>
 	<url></url>
     <properties>
+    		<downloadSources>true</downloadSources>
+  			<downloadJavadocs>true</downloadJavadocs>
             <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 

@@ -3,7 +3,7 @@
 [@ui.page bodyClass="login"]
 	<link href="${static_server}/themes/metro/css/login.css" rel="stylesheet" type="text/css"/>
 	<div class="logo">
-		<h2 style="font-size: 24px;color:white;">“App全网通”管理平台</h2>
+		<h2 style="font-size: 24px;color:white;">上报平台</h2>
 	</div>
 
 	<div class="content">

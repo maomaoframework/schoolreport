@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app version="3.0" xmlns="http://java.sun.com/xml/ns/javaee"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
 
-	<display-name>Green Cube Web Admin</display-name> 
+	<display-name>SchoolReport</display-name> 
 	<description>GA V1.0</description>
 
 	<context-param>
 		<param-name>contextConfigLocation</param-name>
 		<param-value>
-			classpath*:/applicationContext.xml
+			classpath*:applicationContext.xml
 		</param-value>
 	</context-param>
 	
@@ -61,7 +61,7 @@
 		</init-param>
 	</filter>
 	
-	<filter>
+	<!-- <filter>
 		<filter-name>siteStatusFilter</filter-name>
 		<filter-class>org.springframework.web.filter.DelegatingFilterProxy</filter-class>
 	</filter>
@@ -71,7 +71,7 @@
 		<filter-class>huxg.framework.filter.AccessDeniedFilter</filter-class>
 	</filter>
 
-	<!-- <filter>
+	<filter>
 		<filter-name>shiroFilter</filter-name>
 		<filter-class>org.springframework.web.filter.DelegatingFilterProxy</filter-class>
 	</filter> -->
@@ -114,22 +114,7 @@
 	</filter-mapping>
 	-->
 
-	<filter-mapping>
-		<filter-name>siteStatusFilter</filter-name>
-		<url-pattern>*.html</url-pattern>
-	</filter-mapping>
-
-	<filter-mapping>
-		<filter-name>siteStatusFilter</filter-name>
-		<url-pattern>*.jsp</url-pattern>
-	</filter-mapping>
-
-	<filter-mapping>
-		<filter-name>siteStatusFilter</filter-name>
-		<url-pattern>*.jhtml</url-pattern>
-	</filter-mapping>
-
-	<filter-mapping>
+	<!-- <filter-mapping>
 		<filter-name>accessDeniedFilter</filter-name>
 		<url-pattern>/install/data/*</url-pattern>
 	</filter-mapping>
@@ -147,7 +132,7 @@
 	<filter-mapping>
 		<filter-name>accessDeniedFilter</filter-name>
 		<url-pattern>*.conf</url-pattern>
-	</filter-mapping>
+	</filter-mapping> -->
 
 	<!-- <filter-mapping>
 		<filter-name>shiroFilter</filter-name>
